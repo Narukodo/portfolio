@@ -7,7 +7,7 @@ module.exports = {
   mode: prod ? 'production' : 'development',
   entry: './src/index.tsx',
   output: {
-    path: __dirname + '/dist/',
+    path: __dirname + '/dist/'
   },
   module: {
     rules: [
@@ -21,8 +21,14 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader'],
+        use: [MiniCssExtractPlugin.loader, {
+            loader: 'css-loader'
+        }],
       },
+      {
+        test: /\.(jpe?g|png|gif|svg)$/i, 
+        type: 'asset/resource'
+      }
     ]
   },
   devtool: prod ? undefined : 'source-map',
