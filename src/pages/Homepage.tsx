@@ -1,6 +1,6 @@
 import React from "react";
-import { Template } from "../components/HeaderSplash";
+import { PageLayout } from "../components/PageLayout";
 
-const Homepage = () => <Template />;
+const Homepage = () => <PageLayout isHomePage={true} />;
 
 export default Homepage;
