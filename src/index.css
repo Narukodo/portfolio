@@ -29,10 +29,18 @@ body {
     overflow: hidden;
 }
 
+.header.is-short {
+    height: 28vh;
+}
+
 .testimg {
     position: absolute;
     width: 100%;
-    transition: all;
+    transform: translateY(0);
+}
+
+.testimg.is-short {
+    transform: translateY(-25%);
 }
 
 @media (max-aspect-ratio: 17/11) {

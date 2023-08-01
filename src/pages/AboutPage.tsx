@@ -1,10 +1,10 @@
 import React from "react";
 import { PageLayout } from "../components/PageLayout";
 
-const PortfolioPage = () => (
+const AboutPage = () => (
   <PageLayout isHomePage={false} isShort={true}>
-    portfolio
+    about
   </PageLayout>
 );
 
-export default PortfolioPage;
+export default AboutPage;
