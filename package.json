@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack serve --mode=development --open --port 3000",
     "build": "NODE_ENV=production webpack",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tscheck": "tsc"
   },
   "repository": {
     "type": "git",
@@ -19,10 +20,16 @@
   },
   "homepage": "https://github.com/Narukodo/portfolio#readme",
   "devDependencies": {
+    "@babel/core": "^7.23.9",
+    "@babel/preset-env": "^7.23.9",
+    "@babel/preset-react": "^7.23.3",
+    "@babel/preset-typescript": "^7.23.3",
     "@types/react": "^18.2.48",
     "@types/react-dom": "^18.2.18",
+    "babel-loader": "^9.1.3",
     "copy-webpack-plugin": "^12.0.2",
     "css-loader": "^6.9.1",
+    "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.6.0",
     "postcss": "^8.4.33",
     "postcss-loader": "^8.0.0",

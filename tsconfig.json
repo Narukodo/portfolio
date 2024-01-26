@@ -5,9 +5,10 @@
         "noImplicitAny": true,
         "module": "esnext",
         "target": "esnext",
-        "jsx": "react",
+        "jsx": "react-jsx",
         "allowJs": true,
         "moduleResolution": "node",
+        "esModuleInterop": true,
         "strict": true,
         "lib": [
           "dom",
