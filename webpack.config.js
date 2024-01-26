@@ -22,12 +22,17 @@ module.exports = {
       {
         test: /\.(png|svg|jpg|gif)$/,
         exclude: /node_modules/,
-        use: ["file-loader"]
+        use: ["url-loader"]
       }, 
     ],
   },
   resolve: {
     extensions: [".tsx", ".ts", ".js"],
+    alias: {
+        components: path.resolve(__dirname, "src/components/"),
+        pages: path.resolve(__dirname, "src/pages/"),
+        resources: path.resolve(__dirname, "src/resources")
+    }
   },
   plugins: [
     new HtmlWebpackPlugin({
