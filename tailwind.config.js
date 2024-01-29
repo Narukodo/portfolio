@@ -16,7 +16,7 @@ module.exports = {
         sans: ['"Poiret One"', ...defaultTheme.fontFamily.sans]
       },
       colors: {
-        purple: "#7652C6"
+        overlay: "#1D1E22"
       }
     },
   },
