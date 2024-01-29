@@ -5,7 +5,8 @@ module.exports = {
   entry: "./src/index.tsx", // entry point of build
   mode: "development",
   devServer: {
-    watchFiles: ["src/**/*"],
+      watchFiles: ["src/**/*"],
+      historyApiFallback: true,
   },
   module: {
     rules: [
@@ -31,8 +32,8 @@ module.exports = {
     alias: {
         components: path.resolve(__dirname, "src/components/"),
         pages: path.resolve(__dirname, "src/pages/"),
-        resources: path.resolve(__dirname, "src/resources"),
-        styles: path.resolve(__dirname, "src/styles")
+        resources: path.resolve(__dirname, "src/resources/"),
+        styles: path.resolve(__dirname, "src/styles/")
     }
   },
   plugins: [
