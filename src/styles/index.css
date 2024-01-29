@@ -1,3 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@media (max-aspect-ratio: 17/11) {
+    .header-background {
+        height: 100vh;
+    }
+}

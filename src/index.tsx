@@ -1,10 +1,11 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import "./styles/index.css";
-import Navbar from "components/Navbar";
+import Header from "components/Header";
+require("./styles/tailwind.css");
+require("./styles/index.css");
 
 const App: React.FC = () => {
-  return <Navbar />;
+  return <Header />;
 };
 
 const rootElement = document.getElementById("root");
