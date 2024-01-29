@@ -2,15 +2,13 @@ import React from "react";
 import Header from "components/Header";
 import { Outlet } from "react-router-dom";
 
-const Homepage = () => {
+const PageLayout = () => {
   return (
     <>
       <Header />
-      <div>
-        <Outlet />
-      </div>
+      <Outlet />
     </>
   );
 };
 
-export default Homepage;
+export default PageLayout;

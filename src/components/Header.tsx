@@ -3,7 +3,7 @@ import BackgroundImage from "resources/background.png";
 import Navbar from "components/Navbar";
 
 const Header = () => {
-  const location = window.location.href;
+  console.log("render");
   return (
     <div className="h-screen w-screen">
       <div className="h-full w-full absolute bg-black opacity-50" />
