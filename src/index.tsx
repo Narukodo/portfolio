@@ -7,9 +7,8 @@ import PortfolioPage from "pages/Portfolio";
 import StorePage from "pages/Store";
 import ErrorPage from "pages/Error";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
-require("./styles/tailwind.css");
-require("./styles/index.css");
+import "styles/tailwind.css";
+import "styles/index.css";
 
 const router = createBrowserRouter([
   {
