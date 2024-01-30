@@ -1,21 +1,18 @@
 import React, { FC } from "react";
-import { Link } from "react-router-dom";
+import StyledLink from "components/StyledLink";
 
-type NavbarProps = {
-  currentPage: string;
-};
-
-const Navbar: FC<NavbarProps> = ({ currentPage }) => {
+const Navbar: FC = () => {
   return (
     <div className="text-right">
       <h1 className="text-white text-7xl">
-        <Link to="/">ISUKOUHAI</Link>
+        <StyledLink to="/">ISUKOUHAI</StyledLink>
       </h1>
-      <div className="flex text-white text-[2.5vw] justify-between w-full">
-        <Link to="/portfolio">portfolio</Link>
-        <Link to="/commissions">commissions</Link>
-        <Link to="/about">about</Link>
-        <Link to="/store">store</Link>
+
+      <div className="flex text-white text-[2.3vw] justify-between w-full">
+        <StyledLink to="/portfolio">portfolio</StyledLink>
+        <StyledLink to="/commissions">commissions</StyledLink>
+        <StyledLink to="/about">about</StyledLink>
+        <StyledLink to="/store">store</StyledLink>
       </div>
     </div>
   );

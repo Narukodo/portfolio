@@ -7,7 +7,9 @@ const PageLayout = () => {
   return (
     <>
       <Header currentPage={location.pathname} />
-      <Outlet />
+      <div className="px-10 py-10">
+        <Outlet />
+      </div>
     </>
   );
 };
