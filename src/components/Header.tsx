@@ -10,7 +10,7 @@ const Header: FC<HeaderProps> = ({ currentPage }) => {
   return (
     <div
       className={`relative w-full ${
-        currentPage == "/" ? "h-screen" : "h-[28%]"
+        currentPage == "/" ? "h-screen" : "h-1/5 md:h-[28%]"
       } overflow-hidden flex items-center justify-center md:block`}
     >
       <img

@@ -32,10 +32,10 @@ const AboutPage = () => {
         </IconContext.Provider>
       </div>
       <div className="h-5/6 md:w-1/2 md:h-[90%] overflow-y-scroll">
-        <h1 className="md:text-4xl text-2xl mb-5">
+        <h1 className="mb-2 text-xl md:mb-5 md:text-4xl">
           Welcome to my personal website
         </h1>
-        <p className="md:text-sm lg:text-lg">
+        <p className="text-sm lg:text-lg">
           I am a software developer and art enthusiast inspired by inspiration
           comes from games and anime. Most of my focus is on digital art,
           juxtaposing cell-shaded characters on intricate, detailed scenery to
