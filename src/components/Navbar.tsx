@@ -3,8 +3,8 @@ import StyledLink from "components/StyledLink";
 
 const Navbar: FC = () => {
   return (
-    <div className="text-right">
-      <h1 className="text-white text-7xl">
+    <div className="text-center md:text-right">
+      <h1 className="text-white text-4xl md:text-7xl mb-1">
         <StyledLink to="/">ISUKOUHAI</StyledLink>
       </h1>
 

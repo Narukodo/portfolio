@@ -11,7 +11,7 @@ const Header: FC<HeaderProps> = ({ currentPage }) => {
     <div
       className={`relative w-full ${
         currentPage == "/" ? "h-screen" : "h-[28%]"
-      } overflow-hidden`}
+      } overflow-hidden flex items-center justify-center md:block`}
     >
       <img
         src={BackgroundImage}
@@ -21,8 +21,10 @@ const Header: FC<HeaderProps> = ({ currentPage }) => {
       />
       <div className="h-full w-full absolute bg-overlay opacity-75" />
       <div
-        className={`lg:w-[38%] absolute ${
-          currentPage === "/" ? "bottom-32 right-32" : "bottom-8 right-24"
+        className={`lg:w-[38%] w-1/2 absolute ${
+          currentPage === "/"
+            ? "md:bottom-32 md:right-32"
+            : "md:bottom-8 md:right-24"
         }`}
       >
         <Navbar />
