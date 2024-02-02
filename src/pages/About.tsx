@@ -36,10 +36,10 @@ const AboutPage = () => {
           Welcome to my personal website
         </h1>
         <p className="text-sm lg:text-sm">
-          I am a software developer and art enthusiast inspired by inspiration
-          comes from games and anime. Most of my focus is on digital art,
-          juxtaposing cell-shaded characters on intricate, detailed scenery to
-          give the impression of watching an anime.
+          I am a software developer and art enthusiast inspired by games and
+          anime. I specialize in digital art, juxtaposing cell-shaded characters
+          on intricate, detailed scenery to give the impression of watching an
+          anime.
           <br />
           <br />
           This website showcases my best works while showcasing my coding skills
