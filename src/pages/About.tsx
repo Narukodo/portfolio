@@ -5,8 +5,8 @@ import ProfileImage from "resources/profileImage.png";
 
 const AboutPage = () => {
   return (
-    <div className="flex flex-col w-full h-full items-center text-center md:flex-row-reverse md:text-left">
-      <div className="h-28 min-h-28 mb-10 w-2/5 md:w-1/2 md:p-0 md:h-auto">
+    <div className="flex flex-col w-full h-full items-center mt-10 text-center md:flex-row-reverse md:text-left">
+      <div className="h-28 min-h-28 mb-10 w-2/5 md:p-0 md:h-auto md:my-0">
         <img
           src={ProfileImage}
           className="h-24 m-auto mb-3 md:w-1/2 md:h-auto"
@@ -31,11 +31,11 @@ const AboutPage = () => {
           </div>
         </IconContext.Provider>
       </div>
-      <div className="h-5/6 md:w-1/2 md:h-[90%] overflow-y-scroll">
+      <div className="h-5/6 md:w-3/5 md:h-[90%] overflow-y-scroll">
         <h1 className="mb-2 text-xl md:mb-5 md:text-4xl">
           Welcome to my personal website
         </h1>
-        <p className="text-sm lg:text-lg">
+        <p className="text-sm lg:text-sm">
           I am a software developer and art enthusiast inspired by inspiration
           comes from games and anime. Most of my focus is on digital art,
           juxtaposing cell-shaded characters on intricate, detailed scenery to
