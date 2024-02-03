@@ -5,11 +5,11 @@ import ProfileImage from "resources/profileImage.png";
 
 const AboutPage = () => {
   return (
-    <div className="flex flex-col w-full h-full items-center mt-10 text-center md:flex-row-reverse md:text-left">
-      <div className="h-28 min-h-28 mb-10 w-2/5 md:p-0 md:h-auto md:my-0">
+    <div className="flex flex-col w-full h-full items-center mt-10 text-center lg:flex-row-reverse lg:text-left">
+      <div className="h-28 min-h-28 mb-10 w-2/5 lg:p-0 lg:h-auto lg:my-0">
         <img
           src={ProfileImage}
-          className="h-24 m-auto mb-3 md:w-1/2 md:h-auto"
+          className="h-24 m-auto mb-3 lg:w-1/2 lg:h-auto"
         />
         <IconContext.Provider
           value={{
@@ -18,7 +18,7 @@ const AboutPage = () => {
             style: { height: "100%", width: "auto" },
           }}
         >
-          <div className="flex h-8 w-full m-auto md:w-2/5 justify-between md:h-14">
+          <div className="flex h-8 w-full m-auto lg:w-2/5 justify-between lg:h-14">
             <a href="https://twitter.com/Isukouhai">
               <FaSquareXTwitter />
             </a>
@@ -31,8 +31,8 @@ const AboutPage = () => {
           </div>
         </IconContext.Provider>
       </div>
-      <div className="h-5/6 md:w-3/5 md:h-[90%] overflow-y-scroll">
-        <h1 className="mb-2 text-xl md:mb-5 md:text-4xl">
+      <div className="h-5/6 lg:w-3/5 lg:h-[90%] overflow-y-scroll">
+        <h1 className="mb-2 text-xl lg:mb-5 lg:text-4xl">
           Welcome to my personal website
         </h1>
         <p className="text-sm lg:text-sm">

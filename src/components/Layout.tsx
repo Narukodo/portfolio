@@ -14,7 +14,7 @@ const PageLayout = () => {
             : "grow w-full max-h-[72%] align-middle"
         }
       >
-        <div className="h-full md:h-2/3 w-5/6 m-auto md:my-16">
+        <div className="h-full lg:h-2/3 w-5/6 m-auto lg:my-16">
           <Outlet />
         </div>
       </div>

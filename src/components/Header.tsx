@@ -10,21 +10,21 @@ const Header: FC<HeaderProps> = ({ currentPage }) => {
   return (
     <div
       className={`relative w-full ${
-        currentPage == "/" ? "h-screen" : "h-1/5 md:h-[28%]"
-      } overflow-hidden flex items-center justify-center md:block`}
+        currentPage == "/" ? "h-screen" : "h-1/5 lg:h-[28%]"
+      } overflow-hidden flex items-end lg:items-center justify-center lg:block`}
     >
       <img
         src={BackgroundImage}
-        className={`header-background absolute object-cover object-left ${
+        className={`header-background object-[-100px] lg:absolute object-cover lg:object-left ${
           currentPage !== "/" && "top-[-100%]"
         }`}
       />
       <div className="h-full w-full absolute bg-overlay opacity-75" />
       <div
-        className={`lg:w-[38%] w-1/2 absolute ${
+        className={`lg:w-[38%] lg:h-auto h-3/5 w-1/2 absolute ${
           currentPage === "/"
-            ? "md:bottom-32 md:right-32"
-            : "md:bottom-8 md:right-24"
+            ? "lg:bottom-32 lg:right-32"
+            : "lg:bottom-8 lg:right-24"
         }`}
       >
         <Navbar />
